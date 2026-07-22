@@ -1,4 +1,5 @@
-package com.example;
+import com.example.Feline;
+import com.example.Lion;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -12,18 +13,6 @@ class LionTest {
 
     @Mock
     private Feline felineMock;
-
-    @Test
-    void constructor_withMale_shouldSetHasManeTrue() {
-        Lion lion = new Lion("Самец", felineMock);
-        assertTrue(lion.doesHaveMane());
-    }
-
-    @Test
-    void constructor_withFemale_shouldSetHasManeFalse() {
-        Lion lion = new Lion("Самка", felineMock);
-        assertFalse(lion.doesHaveMane());
-    }
 
     @Test
     void constructor_withInvalidSex_shouldThrowException() {

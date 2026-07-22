@@ -1,5 +1,5 @@
-package com.example;
-
+import com.example.Feline;
+import com.example.Lion;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
